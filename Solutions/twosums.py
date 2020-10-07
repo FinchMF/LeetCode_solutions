@@ -1,8 +1,8 @@
 class Solution:
-    def twoSum(self, nums, target):
-        num_dict = {}
-        for idx in range(len(nums)):
-            if target - nums[idx] in num_dict:
-                return [num_dict[target - nums[idx]], idx]
-            num_dict[nums[idx]] = idx
+    def twoSum(self, arr, target):
+        arr_dict = {}
+        for idx in range(len(arr)):
+            if target - arr[idx] in arr_dict:
+                return [arr_dict[target - arr[idx]], idx]
+            arr_dict[arr[idx]] = idx
     
