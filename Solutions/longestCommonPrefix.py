@@ -1,4 +1,5 @@
 
+
 class Solution:
     def longestCommonPrefix(self, s):
         jdx = 0

@@ -1,3 +1,5 @@
+
+
 class Solution:
 
     def __init__(self):
@@ -50,5 +52,8 @@ class Solution:
 
         return restraint and total or 0
 
-
+if __name__: '__main__':
+    
+    string = "42"
+    Solution().myAtoi(string)
 

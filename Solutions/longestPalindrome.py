@@ -1,3 +1,5 @@
+
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         # helper function to parse substrings
