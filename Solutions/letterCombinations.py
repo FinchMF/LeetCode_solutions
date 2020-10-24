@@ -19,12 +19,16 @@ class Solution:
         result = ['']
 
         for digit in digits:
+            # set temporary empty list
+            # also erase pevious temp list after each iteration
             temp = []
+            # reference letters currently in result iteratively 
             for y in result:
+                # make combiation of current letter in result digit's dict value
                 for x in keypad_dic[digit]:
                     temp.append(y + x)
                 result = temp
-
+        
         return result if any(result) else []
 
 
