@@ -35,7 +35,6 @@ class Solution:
 
 if __name__ == '__main__':
 
-    n, target = [1, 0, -1, -, -2, 2], 0
+    n, target = [1, 0, -1, 0, -2, 2], 0
     Solution().foursum(n, target)
- 
-    
+
