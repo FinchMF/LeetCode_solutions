@@ -10,3 +10,5 @@ if __name__ == '__main__':
     needle = "ll"
 
     Solution().strStr(haystack, needle)
+
+    
