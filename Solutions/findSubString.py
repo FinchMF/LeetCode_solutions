@@ -3,14 +3,14 @@ import collections
 
 class Solution:
 
-    def findSubString(self, s:str, words: list(str)) -> list(int):
+    def findSubstring(self, s:str, words: list(str)) -> list(int):
 
         if not s or not words: return []
 
         count = collections.Counter(words)
         len_words = len(words[0]) * len(words)
-        len_word = len(words)
-        count_words = len(words[0])
+        len_word = len(words[0])
+        count_words = len(words)
         result = []
 
         for idx in range(len(s)  - len_words + 1):
@@ -38,6 +38,6 @@ class Solution:
 if __name__ == '__main__':
 
     s, words = "barfoothefoobarman", ["foo","bar"]
-    Solution().findSubString(s, words)
+    Solution().findSubstring(s, words)
 
     
