@@ -6,7 +6,7 @@ class Solution:
         x = 1
         s = 0
         size = arr[0]
-        
+
         for n in arr[::-1][:-1]:
 
                 if n > 0:
@@ -34,4 +34,4 @@ if __name__ == '__main__':
 
     for arr in arrs:
 
-        Solution()minimum_start_value(arr)
+        Solution().minimum_start_value(arr)
