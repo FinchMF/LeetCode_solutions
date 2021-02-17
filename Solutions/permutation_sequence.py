@@ -1,9 +1,21 @@
 
-import math
+
 class Solution:
+
+    @staticmethod
+    def factorial(n):
+
+        if n == 1:
+            
+            return 1
+        else:
+
+            return n * Solution.factorial(n-1)
+
+
     def getPermutation(self, n: int, k: int) -> str:
         
-        seq, k, fact = "", k-1, math.factorial(n-1)
+        seq, k, fact = "", k-1, Solution.factorial(n-1)
         perm = [i for i in range(1, n + 1)]
         
         for i in reversed(range(n)):
