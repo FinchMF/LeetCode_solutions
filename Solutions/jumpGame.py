@@ -7,10 +7,17 @@ class Solution(object):
 
         for idx, length in enumerate(nums):
 
+
+            print(f'index: {idx}')
+            print(f'length: {length}')
+            print(f'reachable: {reachable}')
+
             if idx > reachable:
                 break
-
+            print(f'idx + length: {idx + length}')
             reachable = max(reachable, idx + length)
+            print(f'new reacheble: {reachable}')
+            print('\n')
 
         return reachable >= len(nums) - 1
 
