@@ -30,7 +30,7 @@ class Solution(object):
 
         for n, details in counter.items():
 
-            if details['number'] > 1:
+            if details['number'] == 1:
                 lonely.append(n)
 
             if details['neighbors'] == False:
