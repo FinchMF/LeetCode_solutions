@@ -11,11 +11,3 @@ if __name__ == '__main__':
 
     nums = [10,6,5,8]
     print(Solution().findLonely(nums=nums))
-
-
-
- 
-        
-
-
-
